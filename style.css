@@ -38,19 +38,20 @@ h1{
 }
 
 .buttons button{
-    border-radius: 15px;
+    border-radius: 35px;
     border: 3px solid black;
-    font-size: large;
+    font-size: 23px;
     cursor: pointer;
     margin: 4px;
     background-color: gray;
+    color: white;
 }
 
 .buttons button:hover{
-    background-color: rgb(141, 140, 140);
+    background-color: rgb(100, 100, 100)
 }
 
-/* Design */
+/* Button Design */
 
 #zero{
     grid-column: 1 / span 2;
@@ -58,8 +59,17 @@ h1{
 
 #ac, #opposite, #percent{
     background-color: rgb(206, 206, 206);
+    color: black;
+}
+
+#ac:hover, #opposite:hover, #percent:hover{
+    background-color: rgba(206, 206, 206, 0.716);
 }
 
 #division, #multiply, #substract, #add, #equal{
     background-color: orange;
+}
+
+#division:hover, #multiply:hover, #substract:hover, #add:hover, #equal:hover{
+    background-color: rgb(220, 143, 0);
 }
