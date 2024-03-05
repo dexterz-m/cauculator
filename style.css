@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.container{
+    width: 300px;
+    height: 425px;
+    padding: 50px;
+    border: 5px solid black;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.707)
+}
+
+.inputField{
+    height: 75px;
+    width: auto;
+    border: 5px solid black;
+    border-radius: 5px;
+    background-color: gray;
+    color: greenyellow;
+}
+
+.buttons{
+    display: grid;
+    grid-template-rows: repeat(5,65px);
+    grid-template-columns: repeat(4, 75px);
+    margin-top: 25px;
+    border-radius: 5px;
+}
+
+.buttons button{
+    border-radius: 15px;
+    border: 3px solid black;
+    font-size: large;
+    cursor: pointer;
+    margin: 4px;
+    background-color: gray;
+}
+
+.buttons button:hover{
+    background-color: rgb(141, 140, 140);
+}
+
+/* Design */
+
+#zero{
+    grid-column: 1 / span 2;
+}
+
+#ac, #opposite, #percent{
+    background-color: rgb(206, 206, 206);
+}
+
+#division, #multiply, #substract, #add, #equal{
+    background-color: orange;
+}
