@@ -11,22 +11,20 @@ document.getElementById('input').innerHTML = displayValue
 // Functions
 
 function addValue(inputValue){
-    if(inputValue === '0'){
-        displayValue += '0.'
-        document.getElementById('input').innerHTML = displayValue
-    }
 
-    else if(inputValue === '.'){
+    if(inputValue === '.'){
         if(displayValue.indexOf('.') == -1){
             displayValue += inputValue
+            document.getElementById('input').innerHTML = displayValue
         }
     }
 
     else{
-    displayValue += inputValue
-    document.getElementById('input').innerHTML = displayValue
+        displayValue += inputValue
+        document.getElementById('input').innerHTML = displayValue
+    }
 }
-}
+
 
 function addOperator(inputOperator){
     operator = inputOperator
